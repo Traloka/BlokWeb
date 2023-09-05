@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://boomsupersonic.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home pagina  
   <img src="readme-images/boomhome.jpeg" width="375px" alt="omschrijving van de pagina">
   <img src="readme-images/boomhomescrol.jpeg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Overture informatie pagina  
   <img src="readme-images/overtureinfo.jpeg" width="375px" alt="omschrijving van de pagina">
  
 </details>
