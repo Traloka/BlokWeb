@@ -57,8 +57,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Dus wat heb ik allemaal kunnen vinden? De site is ten eerste niet semantisch correct door het velen gebruik van DIVs en classes. Daarnaast is is er geen echte 
+  NAV maar wordt daar SPANs voor gebruikt. 
+  Qua headings beginnen we met een h1 dan ga je naar een h4 naar een h2 etc. Daar zit ook geen goede opbouw in. 
 
+  De afbeedlingen zijn eigenlijk is het gootste probleem want ze hebben allemaal geen ALT tekst dus als blinde heb geen idee wat het is. Dat is helemaal een probleem 
+  bij afbeeldingen met tekst erin verwerkt. 
+
+  Ook wordt er geen BUTTON elemdnten gebruiket maar wordt er class=button gezegd.
+  De website zelf is vij donker dat associeert meer met dark mode een light mode die is er niet ook is er geen high contrast mode. 
+  De paar achtergrond vidoes's die er zijn zijn niet op pauze worden gezet en de animatie op de sit gaan niet snel maar je kan ze ook niet langzamer laten met
+  "prefers-reduced-motion media query". 
+
+  Links zijn niet goed beschreven als je op "links" met de screenreader door de pagina heen gaat dan krijg je alleen "read more" te horen je weet dus niet 
+  waarover je meer zou willen lezen. 
 </details>
 
 
@@ -69,7 +81,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/BoomWebtags2.0.pdf" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -89,8 +101,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen

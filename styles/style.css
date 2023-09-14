@@ -1,31 +1,35 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+@font-face {
+	font-family: "styrene-a_normal";
+	src: url("../fonts/styrene-a_normal_400.woff") format('truetype');
+	font-weight: light;
+}
+
+
+@font-face {
+	font-family: "styrene-a_normal";
+	src: url("../fonts/styrene-a-med_normal_500.woff") format('truetype');
+	font-weight: medium;
+}
+
+
+@font-face {
+	font-family: "styrene-a_normal";
+	src: url("../fonts/styrene-a_normal_700.woff") format('truetype');
+	font-weight: bold;
+}
+
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
 }
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+li {
+	list-style-type: none;
+}
 
