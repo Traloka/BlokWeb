@@ -101,7 +101,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  
+  Wat niet lukt = tekst toevoegen aan een link in de vorm van je bebt een knop en/of een link met "Read more" op 
+  staan het lukt mij niet om daaraan een alt tekst aan toe te voegen. Zodat een screenreader kan vertellen waar
+  deze link naar toe gaat. 
+  Hoe ik mijn gedownloade font kan gebruiken. 
+  Hoe moet ik te werk gaan met meerdere grotes van afbeeldingen voor: mobiel, pc en tablet?
 
   ### Agenda voor meeting
   samen met je groepje opstellen
