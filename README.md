@@ -106,6 +106,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   deze link naar toe gaat. 
   Hoe ik mijn gedownloade font kan gebruiken. 
   Hoe moet ik te werk gaan met meerdere grotes van afbeeldingen voor: mobiel, pc en tablet?
+  Hoe kan ik een logo animatie svg downloaden en gebruiken. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
