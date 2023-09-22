@@ -84,13 +84,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/BoomWebtags2.0.pdf" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./readme-images/Screenshot 2023-09-22 at 03.14.16.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="./readme-images/FireShot Capture 003 - Boom - Overture - boomsupersonic.com.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
+De voledige paigna.
+Dit is een carousel>
+Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuiven. 
 
 
 
@@ -138,8 +140,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Het is gelukt om een hamburger menu te maken met een micro animatie. 
+  Maar het lukt nog niet om de tekst goed uit te lijnen, de hamburger menu van rechts naar links te laten komen en het voledige scherm in te nemen.
+  Hoe kan ik meerdere afbeeldingen gebruiken voor verschillende scherm grotes?
+  Hoe maak ik een afbeelding kleiner Scale? 
+  Zoek balk in de nav na het openen van de hamburger menu?s
+  Het gebruik van verschillende lettertype maten?
 
   ### Agenda voor meeting
   samen met je groepje opstellen
