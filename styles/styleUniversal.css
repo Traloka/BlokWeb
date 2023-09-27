@@ -23,25 +23,114 @@
   box-sizing:border-box;  
 }
 
-*{
-    margin: 0;
-	background-color: #000000;
-	color: #ffffff;
-	font-family: 'styrene-a_normal', Times, serif;
-}
-
-header > a image{
-    scale: 50%;
-}
-
 :root {
-	--color-text:#000000;
-	--color-background:#ffffff;
+	--color-text:#ffffff;
+	--color-hamburgerMenu: white;
+	--color-background:#000000;
+	--color-date: rgb(219, 209, 209);
+	--color-footer-text:  rgb(219, 209, 209);
+	--color-button: white;
+	--color-input: rgb(39, 36, 36);
 }
 
+*{
+  margin: 0;
+	color: var(--color-text);
+	font-family: 'styrene-a_normal', Times, sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--color-background)
+}
+
+/*hamburger menu*/
+
+button{
+	position: relative;
+	border: none;
+	background-color: transparent;
+}
+
+button > span{
+	position: absolute;
+	display: block;
+	height: 0.15em;
+	width: 1.8em;
+	margin-left: 2em;
+	background: var(--color-hamburgerMenu);
+}
+
+header button span:nth-of-type(1){
+	transform: translateY(-.4em);
+}
+
+header button span:nth-of-type(2){
+	transform: translateY(.05em);
+}
+
+header button span:nth-of-type(3){
+	transform: translateY(.5em);
+}
+
+header {
+	padding:0em;
+	display:flex;
+	justify-content:start;
+	gap:12em;
+	z-index: 9999;
+	position: relative;
+}
+
+header > a {
+	z-index:100;
+}
+
+header > button {
+	z-index:100;
+}
+
+header nav {
+	position:fixed;
+	inset:0;
+	transform:translateX(100%);
+	transition:.3s;
+	background-color: var(--color-background);
+}
+
+header nav.open {
+	transform:translateX(0%);
+}
+
+header img{
+  	height: auto;
+	width: 6em;
+	margin: 1.5em 0em 1em 1.2em;
+}
+
+header nav li{
+	padding-left: 2em;
+	font-size: 120%;
+	line-height: 3em;
+}
+
+header nav form{
+	padding-top: 3.5em;
+	padding-left: 4em;
+}
+
+/* nav li input{
+	border: var(--color-input) solid;
+} */
+
+header li > img{
+	margin: 1.5em 0em 1em 1.2em;
+	width: 6em;
+}
 
 h1{
-    font-size: 180%;
+    font-size: 170%;
 }
 
 ul {
@@ -54,139 +143,74 @@ img {
 	max-width:100%;
 }
 
-
-
-nav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-
-
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  background: #000000;
-}
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: red;
+a{
+	text-decoration: none;
 }
 
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; 
-  z-index: 2; 
-  
-  -webkit-touch-callout: none;
+/*footer*/
+
+
+
+footer a > img{
+    max-width: 55%;
+	max-height: auto;
+	padding: 1.5em 0em 2em .5em;
 }
 
-#menuToggle span
-{
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #ffffff;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+footer > h5{
+	font-size: 130%;
+	margin: 1em 0em .5em 1.1em;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+footer > p{
+	margin-left: 1.8em;
+	margin-right: 1.5em;
+	font-size: 85%;
+	color: var(--color-footer-text)
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
+footer > form{
+	margin: 1.8em;
+	border: var(--color-input) solid;			/* https://www.thoughtco.com/style-forms-with-css-3464316#:~:text=An%20easy%20way%20to%20change,9cf)%20on%20all%20the%20elements. */
 }
 
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
+footer input{
+	background-color: var(--color-input);
+	padding: 1em 11em 1em 1em;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+footer > button{
+	background-color: var(--color-button);
+	color: var(--color-background);
+	margin: 2em;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
+.exploreCareers{
+	display: block;
+	padding: 1.4em 1.7em 1.4em 1.7em;
+	text-transform: uppercase;
 }
 
-#menu
-{
-  position: absolute;
-  width: 450px;
-  margin: -100px 0 0 -50px;
-  padding-left: 100px;
-  padding-top: 95px;
-  background: #000000;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+section:last-of-type p{
+	margin: 7em 1.8em 1.8em 2.5em;
+	color: var(--color-footer-text);
+	font-size: 74%;
 }
 
-#menu li
-{
-  padding: 8px 0;
-  font-size: 22px;
+footer > ul{                          /*  https://www.w3docs.com/snippets/html/how-to-display-an-unordered-list-in-two-columns.html */
+	margin: 0em 1.8em 0em 1.8em;
+	columns: 2;
 }
 
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+footer > ul li{
+	margin-bottom: 1.5em;
+}
+
+
+footer > a{
+	text-decoration: underline;
+	margin-left: 2.5em;
+	text-transform: uppercase;
+	font-size: 65%;
 }

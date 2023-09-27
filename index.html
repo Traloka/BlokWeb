@@ -15,29 +15,35 @@
 <body>
 
 	<header>
+		<!-- <a href="#maincontent" class="skip" aria-label="Skip to main content">Skip to main content</a> -->
 		<a href="index.html" class="logo"><img aria-hidden="true" alt="Boom Supersonic logo" src="./images/BoomSupersonicLogo.png"></a>
-		<nav role="navigation">
-			<div id="menuToggle">
-				<input type="checkbox" />
-				<span></span>
-				<span></span>
-				<span></span>
-				<ul id="menu">
-					<a href="index.html" class="logo"><img aria-hidden="true" alt="Boom Supersonic logo" src="./images/BoomSupersonicLogo.png"></a>
-					<input type="text" placeholder="Search">
-					<a href="index.html"><li>Home</li></a>
-					<a href="./overture.html"><li>Overture</li></a>
-					<a href="#"><li>Symphony</li></a>
-               	 	<a href="#"><li>Commercial</li></a>
-               	 	<a href="#"><li>XB-1</li></a>
-                	<a href="#"><li>Sustainability</li></a>
-                	<a href="#"><li>Partners</li></a>
-                	<a href="#"><li>Company</li></a>
-                	<a href="#"></a><li>Careers</li></a>
-                	<a href="#"><li>Newsroom</li></a>
-                	<a href="#"><li>FlyBy Blog</li></a>
+		<button alt="hamburgermenu" aria-label="togglemenu"> 
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav>
+				<ul>
+					<!-- <li><a href="index.html" class="logo"><img aria-hidden="true" alt="Boom Supersonic logo" src="./images/BoomSupersonicLogo.png"></a></li> -->
+						<li>
+						<form id="form" role="search">                   <!-- Voor searchbar: https://pagedart.com/blog/how-to-add-a-search-bar-in-html/  -->
+						<input type="search" id="query" name="q"
+						 placeholder="Search..."
+						 aria-label="Search through site content">
+					  	</form>
+						</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="./overture.html">Overture</a></li>
+               		<li><a href="#">Symphony</a></li>
+              		<li><a href="#">Commercial</a></li>
+               		<li><a href="#">XB-1</a></li>
+            		<li><a href="#">Sustainability</a></li>
+					<li><a href="#">Partners</a></li>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Newsroom</a></li>
+					<li><a href="#">FlyBy Blog</a></li>
 				</ul>
-			</div>
 		</nav>
 	</header>
 
@@ -57,7 +63,7 @@
 							The world's largest airline poised to have the world's largest supersonic fleet.
 						</figcaption>
 					</figure>
-					<a href="./">Read more </a>
+					<a href="./">read more </a>
 				</li>
 
 				<li>
@@ -68,7 +74,7 @@
 							The first U.S. airline to sign an aircraft purchase agreement with Boom Supersonic.
 						</figcaption>
 					</figure>
-					<a href="./">Read more</a>
+					<a href="./">read more</a>
 				</li>
 
 				<li>
@@ -79,80 +85,83 @@
 							Strategic airline partnership to bring commercial superspnic travel to passengers.
 						</figcaption>
 					</figure>
-					<a href="./">Read more</a>
+					<a href="./">read more</a>
 				</li>
 			</ul>
 		</section>
 
+		<h3>Overture Program Advances</h3>
+
 		<section>
-			<h3>Overture Program Advances</h3>
-			<ul>
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Overture's Order Book stands at 130 Orders and Pre-oders</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-overture-order-book.jpg"
-							alt="an image of the Boom Supersonic Passenger Airplane in the air">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
 
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Overture Adds Key Tier-One Structure Suppliers</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-suppliers.jpg"
-							alt="an image of the Boom Supersonic Passenger Airplane on a runway with suplier companie names: aernnova, leonardo and aciturri">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
+				<ul>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Overture's Order Book stands at 130 Orders and Pre-oders</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-overture-order-book.jpg"
+								alt="an image of the Boom Supersonic Passenger Airplane in the air">
+						</figure>
+						<a href="./">read more</a>
+					</li>
 
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Overture System Configuration Revealed</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-overture-systems-config.jpg"
-							alt="an image of the Boom Supersonic Passenger Airplane with the tructual ribs partially exposed">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Overture Adds Key Tier-One Structure Suppliers</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-suppliers.jpg"
+								alt="an image of the Boom Supersonic Passenger Airplane on a runway with suplier companie names: aernnova, leonardo and aciturri">
+						</figure>
+						<a href="./">read more</a>
+					</li>
 
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Symphony Engine Hits New Program Milstones</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-symphony-milestones.jpg"
-							alt="an image of the Symphony high bypass turbofan engine with a cut out to see the internals">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Overture System Configuration Revealed</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-overture-systems-config.jpg"
+								alt="an image of the Boom Supersonic Passenger Airplane with the tructual ribs partially exposed">
+						</figure>
+						<a href="./">read more</a>
+					</li>
 
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Overture Superfactory Takes Shape</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-facilities.jpg"
-							alt="an image of the construction of Overture Superfactory">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Symphony Engine Hits New Program Milstones</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-symphony-milestones.jpg"
+								alt="an image of the Symphony high bypass turbofan engine with a cut out to see the internals">
+						</figure>
+						<a href="./">read more</a>
+					</li>
 
-				<li>
-					<figure>
-						<figcaption>
-							<h3>Northrop Grumman and and Boom Progress Defense Collaboration</h3>
-						</figcaption>
-						<img src="./images/home-program-advances-northrop-grumman-expansion.jpg"
-							alt="an image of the Overture in a dark grey Northrop Grumman livery">
-					</figure>
-					<a href="./">Read more</a>
-				</li>
-			</ul>
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Overture Superfactory Takes Shape</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-facilities.jpg"
+								alt="an image of the construction of Overture Superfactory">
+						</figure>
+						<a href="./">read more</a>
+					</li>
+
+					<li>
+						<figure>
+							<figcaption>
+								<h3>Northrop Grumman and and Boom Progress Defense Collaboration</h3>
+							</figcaption>
+							<img src="./images/home-program-advances-northrop-grumman-expansion.jpg"
+								alt="an image of the Overture in a dark grey Northrop Grumman livery">
+						</figure>
+						<a href="./">read more</a>
+					</li>
+				</ul>
+
 		</section>
 
 		<section>
@@ -199,7 +208,6 @@
 					alt="an image of the XB-1 infront of a hanger">
 					<a href="./">learn more</a>
 				</li>
-
 			</ul>
 		</section>
 
@@ -212,7 +220,7 @@
 							<h5>Supersonic Progress</h5>
 						</figcaption>
 						<img src="./images/Boom_DarkHangar_16x9_v2-1440x810-1.jpg" alt="An image of the Overture inside the factory">
-						<time datetime="2023-09-15">September 15, 2023</time>
+						<time datetime="2023-09-15">september 15, 2023</time>
 					</figure>
 				</li>
 				
@@ -222,7 +230,7 @@
 							<h5>Boom Supersonic Launches Defense Advisory Group</h5>
 						</figcaption>
 						<img src="./images/Group-37.jpeg" alt="An image of the Overture inside the factory">
-						<time datetime="2023-09-12">September 12, 2023</time>
+						<time datetime="2023-09-12">september 12, 2023</time>
 					</figure>
 				</li>
 
@@ -233,7 +241,7 @@
 						</figcaption>
 						<img src="./images/Boom_60Ka_16x9_v2-1-scaled.jpg"
 							alt="an image of the Overture above the clouds">
-						<time datetime="2023-09-06">September 6, 2023</time>
+						<time datetime="2023-09-06">september 6, 2023</time>
 					</figure>
 				</li>
 			</ul>
@@ -243,6 +251,17 @@
 
 	<footer>
 		<a href="index.html"><img aria-hidden="true" alt="Boom Supersonic logo" src="./images/BoomSupersonicLogo.png"></a>
+		
+		<h5>Stay up to speed</h5>
+		<p>Subscribe to the newsletter for Boom news and insights straight to your inbox.</p>
+		<form>
+			<input type="email" placeholder="Enter email" name="email" required>
+		</form>
+
+		<h5>Careers</h5>
+		<p>We need bright minds to help us deliver on our mission. Check out our open roles and get in touch.</p>
+		<button class="exploreCareers">explore careers</button>
+		
 		<ul>
 			<li><a href="./overture.html">Overture</a></li>
 			<li><a href="#">Symphony</a></li>
@@ -257,25 +276,18 @@
 			<li><a href="#">Contact</a></li>
 		</ul>
 
-		<h5>Stay up to speed</h5>
-		<p>Subscribe to the newsletter for Boom news and insights straight to your inbox.</p>
-		<form>
-			<input type="email" placeholder="Enter Email" name="email" required>
-			<button type="submit">Subscribe</button>
-		</form>
-
-		<h5>Careers</h5>
-		<p>We need bright minds to help us deliver on our mission. Check out our open roles and get in touch.</p>
-		<button>Explore Careers</button>
-
 		<!-- Social buttons -->
-
-		<p>Copyright © 2023 Boom Supersonic. All rights reserved. Except as otherwise expressly permitted,
+		<section>
+			<p>
+			Copyright © 2023 Boom Supersonic. All rights reserved. Except as otherwise expressly permitted,
 			no images or other content displayed on this website may be copied, reprinted, republished,
-			modified, or distributed in any form without the express written permission of the copyright owner.</p>
+			modified, or distributed in any form without the express written permission of the copyright owner.
+			</p>
+		</section>
 
 		<a href="#">Terms of Use</a>
 		<a href="#">Privacy Policy</a>
+		
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>
