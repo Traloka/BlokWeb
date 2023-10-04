@@ -29,12 +29,20 @@
 	--color-background:#000000;
 	--color-date: rgb(219, 209, 209);
 	--color-footer-text:  rgb(219, 209, 209);
+	--color-footer-rights: rgb(101, 100, 100);
 	--color-button: white;
+	--color-buttontekst: #000000;
 	--color-input: rgb(39, 36, 36);
+	--color-border-nav: rgb(84, 84, 84);
+	--color-hover: rgb(69, 69, 69);
 }
 
+
+/* overall styling */
+
+
 *{
-  margin: 0;
+	margin: 0;
 	color: var(--color-text);
 	font-family: 'styrene-a_normal', Times, sans-serif;
 }
@@ -45,7 +53,51 @@ body{
   background: var(--color-background)
 }
 
+h1{
+    font-size: 170%;
+}
+
+h3{
+    font-size: 105%;
+}
+
+ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width:100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: var(--color-hover);
+	cursor: pointer;
+}
+
+span:hover{
+	color: var(--color-hover);
+	cursor: pointer;
+}
+
+.visually-hidden {                      /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
 /*hamburger menu*/
+
 
 button{
 	position: relative;
@@ -61,6 +113,10 @@ button > span{
 	margin-left: 2em;
 	background: var(--color-hamburgerMenu);
 }
+
+
+/* header  */
+
 
 header button span:nth-of-type(1){
 	transform: translateY(-.4em);
@@ -110,47 +166,40 @@ header img{
 }
 
 header nav li{
-	padding-left: 2em;
 	font-size: 120%;
 	line-height: 3em;
+	border-bottom: .09em solid var(--color-border-nav);
+
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+header ul :nth-of-type(1){
+	border-bottom: none;
 }
 
 header nav form{
 	padding-top: 3.5em;
-	padding-left: 4em;
 }
 
-/* nav li input{
-	border: var(--color-input) solid;
-} */
+nav li input{
+	background-color: var(--color-input);
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	max-width: 26em;
+	border: 0.1em var(--color-border-nav) solid;
+}
 
 header li > img{
 	margin: 1.5em 0em 1em 1.2em;
-	width: 6em;
-}
-
-h1{
-    font-size: 170%;
-}
-
-ul {
-	list-style: none;
-	margin:0;
-	padding:0;
-}
-
-img {
-	max-width:100%;
-}
-
-a{
-	text-decoration: none;
 }
 
 
 /*footer*/
 
-
+footer{
+	padding-bottom: 3em;
+}
 
 footer a > img{
     max-width: 55%;
@@ -158,45 +207,73 @@ footer a > img{
 	padding: 1.5em 0em 2em .5em;
 }
 
-footer > h5{
+
+/* newsletter form */
+
+
+footer section:nth-of-type(1) h2 {
 	font-size: 130%;
 	margin: 1em 0em .5em 1.1em;
 }
 
-footer > p{
-	margin-left: 1.8em;
+footer section:nth-of-type(1) p{
+	margin-left: 1.6em;
 	margin-right: 1.5em;
 	font-size: 85%;
 	color: var(--color-footer-text)
 }
 
-footer > form{
-	margin: 1.8em;
-	border: var(--color-input) solid;			/* https://www.thoughtco.com/style-forms-with-css-3464316#:~:text=An%20easy%20way%20to%20change,9cf)%20on%20all%20the%20elements. */
+footer section:nth-of-type(1) form{
+	margin: 1.5em 1em 1em 1.3em;			
 }
 
-footer input{
+footer section:nth-of-type(1) input{
 	background-color: var(--color-input);
-	padding: 1em 11em 1em 1em;
+	padding: 1em 1em 1em 1em;
+	width: 100%;
+	max-width: 26em;
+	border: 0.1em var(--color-border-nav) solid;
+}
+
+footer > p{
+	margin: 1em 1em .5em 1.7em;
+	font-size: 85%;
+	color: var(--color-footer-text)
+}
+
+footer h5{
+	font-size: 130%;
+	padding: 1.5em 0em .5em 1.1em;
+}
+
+/* careers */
+
+
+.exploreCareers{
+	display: block;
+	padding: 1.6em 2.2em 1.6em 2.2em;
+	text-transform: uppercase;
+	margin: 1.5em 5em 1em 2.2em;
+	font-size: 70%;
 }
 
 footer > button{
 	background-color: var(--color-button);
-	color: var(--color-background);
-	margin: 2em;
+	color: #000000;
+
 }
 
-.exploreCareers{
-	display: block;
-	padding: 1.4em 1.7em 1.4em 1.7em;
-	text-transform: uppercase;
-}
-
-section:last-of-type p{
-	margin: 7em 1.8em 1.8em 2.5em;
-	color: var(--color-footer-text);
+footer section:last-of-type p{
+	margin: 3.5em 1.8em 1.8em 2.5em;
+	border-top: .09em solid var(--color-border-nav);
+	padding-top: 1.5em;
+	color: var(--color-footer-rights);
 	font-size: 74%;
 }
+
+
+/*ul footer*/
+
 
 footer > ul{                          /*  https://www.w3docs.com/snippets/html/how-to-display-an-unordered-list-in-two-columns.html */
 	margin: 0em 1.8em 0em 1.8em;
@@ -204,13 +281,40 @@ footer > ul{                          /*  https://www.w3docs.com/snippets/html/h
 }
 
 footer > ul li{
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
+	border-bottom: .09em solid var(--color-border-nav);
+	padding-bottom: .8em;
 }
 
+footer ul :nth-of-type(6){
+	border-bottom: none;
+}
+
+footer ul :nth-of-type(12){
+	border-bottom: none;
+}
+
+footer section:nth-of-type(2) ul{
+	margin: 0;
+	columns: 5;
+	max-width: 40em;
+	padding-left: 1.8em;
+	padding-right: 4em;
+	margin-bottom: 1em;
+}
+
+footer section:nth-of-type(2) ul > li img{
+	max-width: 90%;
+}
 
 footer > a{
 	text-decoration: underline;
-	margin-left: 2.5em;
+	text-decoration-thickness: .2em;	     /*https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness */
+	text-decoration-color: var(--color-footer-text);
+	padding-bottom: 1em;
+	text-underline-offset: 1em;			/*https://css-tricks.com/almanac/properties/t/text-underline-offset/#:~:text=The%20text%2Dunderline%2Doffset%20property,underlines%20from%20their%20initial%20position.&text=Once%20you%20apply%20an%20underline,text%2Dunderline%2Doffset%20property. */
+	margin-left: 2.7em;
 	text-transform: uppercase;
 	font-size: 65%;
+	border-bottom: 5em;
 }

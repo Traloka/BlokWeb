@@ -1,13 +1,22 @@
 :root {
 	--color-text:#ffffff;
+	--color-hamburgerMenu: white;
 	--color-background:#000000;
-	--color-date: rgb(137, 137, 137);
-    --color-button: #ffffff; 
+	--color-date: rgb(219, 209, 209);
+	--color-footer-text:  rgb(219, 209, 209);
+	--color-button: white;
+	--color-buttontekst: #000000;
+	--color-input: rgb(39, 36, 36);
+	--color-border-nav: rgb(84, 84, 84);
 }
 
 section:nth-of-type(1) .h1{
     position: relative;
 }
+
+
+/* eerste section */
+
 
 h1{
     position: absolute;
@@ -15,87 +24,107 @@ h1{
     background-color: transparent;
     text-align: center;
     top: 0em;
+    font-weight: 500;
 }
 
-section:nth-of-type(1) img{
+main section:nth-of-type(1) img{
     padding-left: 1.5em;
     padding-right: 1.5em;
+    margin-top: 2em;
 }
 
-section:nth-of-type(1) h2{
-    margin-left: 1.2em;
-    font-size: 120%;
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-
-section:nth-of-type(1) figcaption{
+main section:nth-of-type(1) figcaption{
     font-size: 85%;
-    margin-left: 1.8em;
-    margin-right: 2em;
-    margin-top: 3em;
-    margin-bottom: 1em;
+    margin: 3em 2em 1em 1.8em;
 }
 
-section:nth-of-type(1) figure{
+main section:nth-of-type(1) figure{
     position: relative;
 }
 
-section:nth-of-type(1) h2{
+main section:nth-of-type(1) h2{
     position: absolute;
-    top: 10.6em;
+    top: 12.2em;
     padding: 0;
+    margin-left: 1.2em;
+    font-size: 120%;
+    font-weight: 500;
 }
 
-section:nth-of-type(1) a{
+main section:nth-of-type(1) a{
     padding-left: 2.5em;
-    
+    margin-bottom: 4em;
+    text-decoration-color: var(--color-footer-text);
+    text-decoration-thickness: 2em;
     font-size: 66%;
     text-decoration: underline;
+    text-underline-offset: .5em;
     line-height: 4em;
     text-transform: uppercase;
 }
 
 
-
-/*carousel*/
-
+/*carousel (tweede section)*/
 
 
-h3{
-    margin-left: 1.5em;
-    margin-bottom: 1.8em;
-    font-size: 105%;
+main section:nth-of-type(2) h2{
+    font-size: 115%;
+    margin-left: 1.4em;
+    margin-top: 3em;
 }
 
-section:nth-of-type(2) ul{
-    display: flex;
+main section:nth-of-type(2) ul{
+    display: flex;                             /* probleem horizontale scroll */
+    flex-direction: row;
     overflow-x: scroll;
-    gap: 0.1em;
+    gap: 2em;
+
+    scroll-snap-type: x mandatory;
+    
+    overscroll-behavior-x: contain;
+
 }
 
-section:nth-of-type(2) ul > li{
+main section:nth-of-type(2) ul > li{
     width: 100%;
     flex-shrink: 0;
+    padding:.75em 1.5em;
+    
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+
+    scroll-snap-align: center;
+
+    /* voor de responsiveness */
+    max-width: 40em;
 }
 
-section:nth-of-type(2) figure > img{
-    max-width: 90%;
-	max-height: auto;
-    padding-left: 1.5em;
+main section:nth-of-type(2) li > a{
+    margin-top: 1.5em;
+    font-size: 66%;
+    text-decoration: underline;
+    text-underline-offset: .5em;
+    line-height: 4em;
+    text-transform: uppercase;
 }
 
+main section:nth-of-type(2) img {
+    width: 100%;
+	height: auto;
+    order: -1;
+}
 
 
 /* Derde section */
 
 
-
-section:nth-of-type(3) .h4{
+main section:nth-of-type(3) li{
     position: relative;
+    margin: 0;
 }
 
-h4{
+main section:nth-of-type(3) h3{
     position: absolute;
     font-size: 175%;
     text-align: center;
@@ -103,41 +132,35 @@ h4{
     background-color: transparent;
 }
 
-section:nth-of-type(3) li{
-    position: relative;
-    margin: 0;
-}
 
-section:nth-of-type(3) a{
+
+main section:nth-of-type(3) a{
     position: absolute;
-    margin-right: 5em;
-    margin-top: 14em;
+    margin-top: 15em;
     font-size: 75%;
     text-transform: uppercase;
-    left: 12.5em;
-    border-block: solid;
+    left: 10em;
     background-color: var(--color-button);
-    
+    color: var(--color-buttontekst);
+    padding: 1.8em 2.9em 1.8em 2.9em;
 }
-
 
 
 /*Vierde section*/
 
 
-
-section:nth-of-type(4) h2{
+main section:nth-of-type(4) h2{
     margin: 1em 0em 1em 1em;
 } 
 
-section:nth-of-type(4) img{
+main section:nth-of-type(4) img{
     position: relative;
     padding-left: 1.3em;
     padding-right: 1.3em;
     margin-bottom: 6.5em;
 }
 
-section:nth-of-type(4) figure{
+main section:nth-of-type(4) figure{
     position: relative;
 }
 
@@ -151,7 +174,7 @@ time{
     left: 2em;
 }
 
-section:nth-of-type(4) figcaption h5{
+main section:nth-of-type(4) figcaption h5{
     position: absolute;
     margin-left: 1.2em;
     margin-right: 2em;

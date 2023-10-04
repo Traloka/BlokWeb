@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw met een vleugje rood
 
   #### Je focus:
-  Surface plane
+  Responsiveness 
  
 </details>
 
@@ -115,10 +115,10 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | NAV die naar   | en dit             | en ik dit    | en dan ik dat    |
+  | voren komt     | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | zodra naar     | ...                | ...          | ...              |
+    boven scrollen
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -152,9 +152,9 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Hoe draai ik   | en dit             | en ik dit    | en dan ik dat    |
+  | de volgorde    | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | om?            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -177,7 +177,17 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is): Wat verbeterd is dat ik bij de knoppen nu een hover state heb aangebracht, teksten die eers niet goed leebaar waren zijn nu beter te lezen. Doordat ik de een lichtere tint van
+  grijs heb gebruikt inplaats van de donkere die op de echte wesite wordt gebruikt op de zwarte achtergrond. Goed gebruikt gemaakt van headers, overal een alt tekst en beschrijvingen van afbeeldingen
+  en knoppen.
+
+  <img src="./readme-images/test1.HEIC" width="375px" alt="bummer">
+  <img src="./readme-images/test2.HEIC" width="375px" alt="bummer">
+  <img src="./readme-images/test3.HEIC" width="375px" alt="bummer">
+  <img src="./readme-images/test4.HEIC" width="375px" alt="bummer">
+  <img src="./readme-images/test5.HEIC" width="375px" alt="bummer">
+
+
 
 </details>
 
@@ -207,10 +217,10 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Voeg button states toe
+  - 
+  - 
+  
 
 </details>
 
@@ -224,19 +234,23 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="./readme-images/mobiel.png" width="375px" alt="uitomst opdracht 1">
+  Mobiel werkt gewoon goed en daar blijft het bij.
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Heel veel nieuw gelerd van het maken van een carousel tot het positioneren doormiddel van 
+  "position", het geburuik maken van "nth-of-type" tag heel handig deze, een functioneerende 
+  hamburger menu. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="./readme-images/carousel.png" width="375px" alt="top">
+  <img src="./readme-images/pointerHamburger.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Er is nog veel niet gelukt: 1. Het maken van een responsive website mijn site is totaal niet responsive dat weet ik heel goed dus ik moet nog flink aan de slag, 2. index.htlm die een 
+  horizontale scroll heeft gekregen ik kan maar niet vinden waar deze ineens vandaan komt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/nietResponsive.png" width="375px" alt="bummer">
 </details>
 
 
@@ -252,8 +266,10 @@ Hier komen de afbeeldingen met tekst van rechts en links naar het midden schuive
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness (om een     link te stylen)
+  2. https://www.a11yproject.com/posts/how-to-hide-content (voor het versoppen van html)
+  3. https://css-tricks.com/almanac/properties/t/text-underline-offset/   #:~:text=The%20text%2Dunderline%2Doffset%20property,underlines%20from%20their%20initial%20position.&text=Once%20you%20apply%20an%20underline,text%2Dunderline%2Doffset%20property.
+  (ook voor de styling van links)
+  4. chatGPT voor onder andere het gebruik van de "order" tag
 
 </details>
