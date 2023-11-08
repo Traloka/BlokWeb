@@ -57,7 +57,7 @@ main section:nth-of-type(2) ul{
 }
 
 main section:nth-of-type(2) ul > li{
-    margin: .5em 1em 4em 1em;
+    margin: 0em 1em 4em 1em;
 }
 
 

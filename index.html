@@ -38,19 +38,42 @@
                		<li><a href="#">XB-1</a></li>
             		<li><a href="#">Sustainability</a></li>
 					<li><a href="#">Partners</a></li>
-					<li><a href="#">Company</a></li>
+					<li>
+						<details>
+							<summary>Company</summary>
+					  		<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Contact</a></li>
+							</ul>
+						</details>
+					</li>
 					<li><a href="#">Careers</a></li>
-					<li><a href="#">Newsroom</a></li>
+					<li>
+						<details>
+							<summary>Newsroom</summary>
+							<ul>
+							<li><a href="#">Media Assets</a></li>
+							<li><a href="#">Boom in the News</a></li>
+							</ul>
+						</details>
+					</li>
 					<li><a href="#">FlyBy Blog</a></li>
 				</ul>
 		</nav>
 	</header>
 
-
 	<main>
 
-		<img src="./images/home-hero-768x960.jpg" alt="An image of the Boom Supersonic Passenger Airplane">
+		 <picture>                                          
+				<source media="(max-width: 768px)" 
+			srcset="./images/home-hero-768x960.jpg" />
+				<source media="(min-width: 769px)" 
+			srcset="./images/home-hero.jpg" />
+				<img src="./image/home-hero.jpg" alt="An image of the Boom Supersonic Passenger Airplane" />
+		 </picture>
 
+		 <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+			  
 		<section>
 			<h1>Making the World Dramatically More Accessible</h1>
 			<ul>
@@ -97,42 +120,50 @@
 						<h3>Overture's Order Book stands at 130 Orders and Pre-oders</h3>
 						<img src="./images/home-program-advances-overture-order-book.jpg"
 							alt="an image of the Boom Supersonic Passenger Airplane in the air">
-						<a href="./">read more <span class="visually-hidden">about: Overture's Order Book stands at 130 Orders and Pre-oders</span></a>
+						<a href="./">read more 
+							<span class="visually-hidden">about: Overture's Order Book stands at 130 Orders and Pre-oders</span>
+						</a>
 					</li>
 
 					<li>
 						<h3>Overture Adds Key Tier-One Structure Suppliers</h3>
 						<img src="./images/home-program-advances-suppliers.jpg"
 							alt="an image of the Boom Supersonic Passenger Airplane on a runway with suplier companie names: aernnova, leonardo and aciturri">
-						<a href="./">read more <span class="visually-hidden">about: </span></a>
+						<a href="./">read more 
+							<span class="visually-hidden">about: Overture Adds Key Tier-One Structure Suppliers</span>
+						</a>
 					</li>
 
 					<li>
 						<h3>Overture System Configuration Revealed</h3>
 						<img src="./images/home-program-advances-overture-systems-config.jpg"
 							alt="an image of the Boom Supersonic Passenger Airplane with the tructual ribs partially exposed">
-						<a href="./">read more <span class="visually-hidden">about: Overture Adds Key Tier-One Structure Suppliers</span></a>
+						<a href="./">read more <span class="visually-hidden">about: Overture Adds Key Tier-One Structure Suppliers</span>
+						</a>
 					</li>
 
 					<li>
 						<h3>Symphony Engine Hits New Program Milstones</h3>
 						<img src="./images/home-program-advances-symphony-milestones.jpg"
 							alt="an image of the Symphony high bypass turbofan engine with a cut out to see the internals">
-						<a href="./">read more <span class="visually-hidden">about: Symphony Engine Hits New Program Milstones</span></a>
+						<a href="./">read more <span class="visually-hidden">about: Symphony Engine Hits New Program Milstones</span>
+						</a>
 					</li>
 
 					<li>
 						<h3>Overture Superfactory Takes Shape</h3>
 						<img src="./images/home-program-advances-facilities.jpg"
 							alt="an image of the construction of Overture Superfactory">
-						<a href="./">read more <span class="visually-hidden">about: Overture Superfactory Takes Shape</span></a>
+						<a href="./">read more <span class="visually-hidden">about: Overture Superfactory Takes Shape</span>
+						</a>
 					</li>
 
 					<li>
 						<h3>Northrop Grumman and and Boom Progress Defense Collaboration</h3>
 						<img src="./images/home-program-advances-northrop-grumman-expansion.jpg"
 							alt="an image of the Overture in a dark grey Northrop Grumman livery">
-						<a href="./">read more <span class="visually-hidden">about: Northrop Grumman and and Boom Progress Defense Collaboration</span></a>
+						<a href="./">read more <span class="visually-hidden">about: Northrop Grumman and and Boom Progress Defense Collaboration</span>
+						</a>
 					</li>
 				</ul>
 
@@ -140,47 +171,89 @@
 
 		<section>
 			<h2 class="visually-hidden">More about the supersonic traveling</h2>
-			<ul>
+			<ul>		
 				<li>
 					<h3>Overture: The World's Fastest Airliner</h3>
-					<img src="./images/home-overture-new.jpg"
-						alt="An image of the Overture flying above the clouds from the left side">
+
+					<picture>
+							<source media="(max-width: 768px)" 
+						srcset="./images/home-overture-new.jpg" />
+							<source media="(min-width: 769px)" 
+						srcset="./images/home-overture.jpg" />
+							<img src="./images/home-overture-new.jpg" alt="An image of the Overture flying above the clouds from the left side" />
+					 </picture>
+
 					<a href="./">learn more <span class="visually-hidden">about: Overture: The World's Fastest Airliner</span></a>
 				</li>
 
 				<li>
 					<h3>Large and Growing Demand for Supersonic Travel</h3>
-					<img src="./images/home-commercial-new.jpg"
-						alt="an image of the Overture flying above the clouds from the rear side">
+
+					<picture>
+						<source media="(max-width: 768px)" 
+					srcset="./images/home-commercial-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./images/home-commercial.jpg" />
+						<img src="./images/home-commercial-new.jpg" alt="an image of the Overture flying above the clouds from the rear side" />
+					 </picture>
+					
 					<a href="./">learn more <span class="visually-hidden">about: Large and Growing Demand for Supersonic Travel</span></a>
 				</li>
-
+				
 				<li>
 					<h3>Building a Global Supersonic Future</h3>
-					<img src="./images/home-partners-new.jpg"
-						alt="an image of Boom's partners (GE additive, Dimensional energy, StandardAero, AIT, Air Company,
+
+					<picture>
+						<source media="(max-width: 768px)" 
+					srcset="./images/home-partners-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./images/home-partners.jpg" />
+						<img src="./images/home-partners-new.jpg" alt="an image of Boom's partners (GE additive, Dimensional energy, StandardAero, AIT, Air Company,
 						Collins Aerospace, Kratos, FlightSafety, Eaton, Safran, Aernnova, Aciturri & Leonardo)">
+					</picture>
+
 					<a href="./">learn more <span class="visually-hidden">about: Building a Global Supersonic Future</span></a>
 				</li>
 
 				<li>
 					<h3>Symphony: The Engine Designed for Overture</h3>
-					<img src="./images/home-symhpony.jpg"
-						alt="an image of the Symphony high bypass turbofan engine with a cut out to see the internals">
+
+					<picture>
+						<source media="(max-width: 768px)" 
+					srcset="./images/home-symhpony.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./images/symphony-large.jpg" />
+						<img src="./images/home-symhpony.jpg" alt="an image of the Symphony high bypass turbofan engine with a cut out to see the internals">
+					</picture>
+
 					<a href="./"> learn more <span class="visually-hidden">about: Symphony: The Engine Designed for Overture</span></a>
 				</li>
 
 				<li>
 					<h3>Sustainability: Mach 1.7 Meets Net Zero Carbon</h3>
-					<img src="./images/home-sustainability-new.jpg"
-						alt="an image of the Overture in clear blue skies">
+
+					<picture>
+						<source media="(max-width: 768px)" 
+					srcset="./images/home-sustainability-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./images/home-sustainability.jpg" />
+						<img src="./images/home-sustainability-new.jpg" alt="an image of the Overture in clear blue skies" />
+				 	</picture>
+
 					<a href="./">learn more <span class="visually-hidden">about: Sustainability: Mach 1.7 Meets Net Zero Carbon</span></a>
 				</li>
 
 				<li>
 					<h3>XB-1: Boom's Supersonic Technology Demonstrator</h3>
-					<img src="./images/home-xb-1-new.jpg" 
-					alt="an image of the XB-1 infront of a hanger">
+
+					<picture>
+						<source media="(max-width: 768px)" 
+					srcset="./images/home-xb-1-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./images/home-xb-1.jpg" />
+						<img src="./images/home-xb-1-new.jpg" alt="an image of the XB-1 infront of a hanger" />
+				 	</picture>
+
 					<a href="./">learn more <span class="visually-hidden">about XB-1: Boom's Supersonic Technology Demonstrator</span></a>
 				</li>
 			</ul>
@@ -243,11 +316,21 @@
 		
 		<section>
 			<ul>
-				<li><a href="https://twitter.com/boomaero" target=”_blank”><img aria-hidden="true" alt="link to twitter" src="./footerimages/twitter.jpeg"></a></li>
-				<li><a href="https://www.linkedin.com/company/boom-technology-inc./" target=”_blank”><img aria-hidden="link to linkedin" alt="link to linkedin" src="./footerimages/linkedin.jpeg"></a></li>
-				<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”><img aria-hidden="true" alt="link to instagram" src="./footerimages/instagram.jpeg"></a></li>
-				<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”><img aria-hidden="true" alt="link to youtube" src="./footerimages/youtube.jpeg"></a></li>
-				<li><a href="https://www.facebook.com/boomsupersonic/" target=”_blank”><img aria-hidden="true" alt="link to facebook" src="./footerimages/facebook.jpeg"></a></li>
+				<li><a href="https://twitter.com/boomaero" target=”_blank”>
+					<img aria-hidden="true" alt="link to twitter" 
+					src="./footerimages/twitter.jpeg"></a></li>
+				<li><a href="https://www.linkedin.com/company/boom-technology-inc./" target=”_blank”>
+					<img aria-hidden="true" alt="link to linkedin" 
+					src="./footerimages/linkedin.jpeg"></a></li>
+				<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”>
+					<img aria-hidden="true" alt="link to instagram" 
+					src="./footerimages/instagram.jpeg"></a></li>
+				<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”>
+					<img aria-hidden="true" alt="link to youtube" 
+					src="./footerimages/youtube.jpeg"></a></li>
+				<li><a href="https://www.facebook.com/boomsupersonic/" target=”_blank”>
+					<img aria-hidden="true" alt="link to facebook" 
+					src="./footerimages/facebook.jpeg"></a></li>
 			</ul>
 		</section>
 
