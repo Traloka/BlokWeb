@@ -23,9 +23,6 @@
   box-sizing:border-box;  
 }
 
-* {
-	border:solid 1px red;
-}
 
 :root {
 	--color-text:#ffffff;
@@ -46,6 +43,7 @@
 
 
 *{
+	font-weight: 500;
 	margin: 0;
 	color: var(--color-text);
 	font-family: 'styrene-a_normal', Times, sans-serif;
@@ -55,6 +53,14 @@ body{
   margin: 0;
   padding: 0;
   background: var(--color-background)
+}
+
+/* https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
+
+.skip-to-content-link {
+	left: 50%;
+	position: absolute;
+	transform: translateY(-100%);
 }
 
 /* https://www.w3schools.com/howto/howto_css_responsive_text.asp */
@@ -77,9 +83,6 @@ body{
 	}
   }
 
-h3{
-    font-size: 105%;
-}
 
 ul {
 	list-style: none;
@@ -118,7 +121,7 @@ button{
 	position: relative;
 	border: none;
 	background-color: transparent;
-	width: 2em;
+	width: 8em;
 	cursor: pointer;
 }
 
@@ -127,8 +130,20 @@ button > span{
 	display: block;
 	height: 0.15em;
 	width: 1.8em;
-	/* margin-left: 2em; */
+	/* right: 6em; */
 	background: var(--color-hamburgerMenu);
+}
+
+@media screen and (min-width: 767px) {
+	button > span{
+		right: 6em
+	}
+}
+  
+@media screen and (max-width: 766px) {
+	button > span {
+		right: 2em;
+	}
 }
 
 
@@ -152,8 +167,6 @@ header {
 	justify-content:space-between;
 	z-index: 9999;
 	position: relative;
-
-	background-color: red;
 }
 
 header > a {
@@ -180,25 +193,27 @@ header nav.open {
 
 header img{
 	padding-top: 1em;
+	padding-bottom: .7em;
 }
 
-@media screen and (min-width: 390px) {
-	header img {
-	  width: 160px;
+@media screen and (min-width: 767px) {
+	header img{
+		width: 220px;
+		padding-left: 5em;
 	}
-  }
+}
   
 @media screen and (max-width: 766px) {
 	header img {
-	  width: 100px;
+	  width: 120px;
+	  padding-left: 1em;
 	}
-  }
+}
 
 header nav li{
 	font-size: 120%;
 	line-height: 3em;
 	border-bottom: .09em solid var(--color-border-nav);
-
 	margin-left: 1.5em;
 	margin-right: 1.5em;
 }
@@ -220,16 +235,17 @@ nav li input{
 }
 
 header li > img{
-	margin: 1.5em 0em 1em 1.2em;
+	padding: 1.5em 0em 1em 1.2em;
 }
 
 details li > a{
-	color: aquamarine;
+	/* color: aquamarine; */
 	font-size: 80%;
 }
 
 
 /*footer*/
+
 
 footer{
 	padding-bottom: 3em;
@@ -247,18 +263,18 @@ footer a > img{
 
 footer section:nth-of-type(1) h2 {
 	font-size: 130%;
-	margin: 1em 0em .5em 1.1em;
+	padding: 1em 0em .5em 1.1em;
 }
 
 footer section:nth-of-type(1) p{
-	margin-left: 1.6em;
-	margin-right: 1.5em;
+	padding-left: 1.6em;
+	padding-right: 1.5em;
 	font-size: 85%;
 	color: var(--color-footer-text)
 }
 
 footer section:nth-of-type(1) form{
-	margin: 1.5em 1em 1em 1.3em;			
+	padding: 1.5em 1em 1em 1.3em;			
 }
 
 footer section:nth-of-type(1) input{
@@ -270,7 +286,7 @@ footer section:nth-of-type(1) input{
 }
 
 footer > p{
-	margin: 1em 1em .5em 1.7em;
+	padding: 1em 1em .5em 1.7em;
 	font-size: 85%;
 	color: var(--color-footer-text)
 }
@@ -284,12 +300,9 @@ footer h5{
 
 
 .exploreCareers{
-	display: inline-block;
-	/* padding: 1.5em 15em 1.5em 7em; */
-	max-width: 217px;
+	padding: 1.5em 13em 1.5em 1.5em;
 	text-align: center;
 	text-transform: uppercase;
-	/* margin: 1.5em 5em 1em 2.2em; */
 	margin-left: 2.2em;
 	margin-top: 1.5em;
 	font-size: 70%;
@@ -299,7 +312,8 @@ footer > button{
 	background-color: var(--color-button);
 	color: #000000;
 	padding: 1em 8em 1em 2em;
-	text-align: center;
+	display: flex;
+	/* text-align: center; */
 }
 
 footer section:last-of-type p{
@@ -315,7 +329,7 @@ footer section:last-of-type p{
 
 
 footer > ul{                          /*  https://www.w3docs.com/snippets/html/how-to-display-an-unordered-list-in-two-columns.html */
-	margin: 0em 1.8em 0em 1.8em;
+	padding: 0em 1.8em 0em 1.8em;
 	columns: 2;
 }
 
@@ -337,9 +351,8 @@ footer section:nth-of-type(2) ul{
 	margin: 0;
 	columns: 5;
 	max-width: 40em;
-	padding-left: 1.8em;
-	padding-right: 4em;
-	margin-bottom: 1em;
+	padding: 2em 4em 2em 1.8em;
+	padding-bottom: 1em;
 }
 
 footer section:nth-of-type(2) ul > li img{
@@ -352,7 +365,7 @@ footer > a{
 	text-decoration-color: var(--color-footer-text);
 	padding-bottom: 1em;
 	text-underline-offset: 1em;			/*https://css-tricks.com/almanac/properties/t/text-underline-offset/#:~:text=The%20text%2Dunderline%2Doffset%20property,underlines%20from%20their%20initial%20position.&text=Once%20you%20apply%20an%20underline,text%2Dunderline%2Doffset%20property. */
-	margin-left: 2.7em;
+	padding-left: 3em;
 	text-transform: uppercase;
 	font-size: 65%;
 	border-bottom: 5em;

@@ -15,7 +15,7 @@
 <body>
 
 	<header>
-		<!-- <a href="#maincontent" class="skip" aria-label="Skip to main content">Skip to main content</a> -->
+			<a class="skip-to-content-link" href="./overture.html">Skip to content</a>               <!-- https://css-tricks.com/how-to-create-a-skip-to-content-link/ -->
 		<a href="index.html" class="logo"><img aria-hidden="true" alt="Boom Supersonic logo link to home" src="./images/BoomSupersonicLogo.png"></a>
 		<button aria-label="togglemenu"> 
 			<span></span>
@@ -68,7 +68,7 @@
 	<section>
 		<h1>Overture</h1>
 		<p>The world’s fastest airliner — optimized for speed, safety, and sustainability.</p>
-		<img src="./imagesOverture/overture-hero-1440x480.jpg" alt="The Overture aircraft on a blacked out background">
+		<img src="./imagesOverture/overture-hero-1757x586.jpeg" alt="The Overture aircraft on a blacked out background">
 	</section>
 
 
@@ -130,7 +130,15 @@
 	<section>
 			<h2>Powered by Symphony</h2>
 			<p>The Boom-developed engine for Overture.</p>
-			<img src="./imagesOverture/overture-powered-by-symphony-new.jpg" alt="an image of the engines under the left wing pannel">
+	
+			<picture>
+				<source media="(max-width: 768px)"
+			srcset="./imagesOverture/overture-powered-by-symphony-new.jpg" />
+				<source media="(min-width: 769px)" 
+			srcset="./imagesOverture/overture-powered-by-symphony.jpg" />	
+				<img src="./imagesOverture/overture-powered-by-symphony-new.jpg" alt="an image of the engines under the left wing pannel">
+			</picture>
+
 			<a href="#">learn more <span class="visually-hidden">about: The Boom-developed engine for Overture </span></a>
 	</section>
 
@@ -203,14 +211,30 @@
 				<h2>An Elevated Passenger Experience</h2>
 				<p>Boom is combining rigorous passenger research with iterative design development to deliver an onboard experience 
 				that maximizes value to our airlines and is beloved by their passengers.</p>
-				<img src="./imagesOverture/overture-passenger-experience-new.jpg" alt="an image of the Overtures cabin">
+
+				<picture>
+					<source media="(max-width: 768px)"
+				srcset="./imagesOverture/overture-passenger-experience-new.jpg" />
+					<source media="(min-width: 769px)" 
+				srcset="./imagesOverture/overture-passenger-experience.jpg" />	
+					<img src="./imagesOverture/overture-passenger-experience-new.jpg" alt="an image of the Overtures cabin">
+				</picture>
+
 			</li>
 		
 			<li>
 				<h2>Building a Global Supersonic Future</h2>
 				<p>A global team of industry leaders is supporting Boom’s mission to make the world dramatically more accessible.</p>
-				<img src="./imagesOverture/overture-partners-new.jpg" alt="an image of Boom's partners (GE additive, Dimensional energy, StandardAero, AIT, Air Company,
-				Collins Aerospace, Kratos, FlightSafety, Eaton, Safran, Aernnova, Aciturri & Leonardo)">
+				
+				<picture>
+					<source media="(max-width: 768px)"
+				srcset="./imagesOverture/overture-partners-new.jpg" />
+					<source media="(min-width: 769px)" 
+				srcset="./imagesOverture/overture-partners.jpg" />	
+					<img src="./imagesOverture/overture-partners-new.jpg" alt="an image of Boom's partners (GE additive, Dimensional energy, StandardAero, AIT, Air Company,
+					Collins Aerospace, Kratos, FlightSafety, Eaton, Safran, Aernnova, Aciturri & Leonardo)">
+				</picture>
+				
 				<a href="./">learn more <span class="visually-hidden">about: boom's busissines partners</span></a>
 			</li>
 		</ul>
@@ -279,7 +303,13 @@
 
 	<section>
 	<h2>Construction Underway on Overture Facilities</h2>
-		<img src="./imagesOverture/overture-facilities-new.jpg" alt="a photo of the Overture's factory being assembled">
+		<picture>
+			<source media="(max-width: 768px)"
+		srcset="./imagesOverture/overture-facilities-new.jpg" />
+			<source media="(min-width: 769px)" 
+		srcset="./imagesOverture/overture-facilities.jpg" />	
+			<img src="./imagesOverture/overture-facilities-new.jpg" alt="a photo of the Overture's factory being assembled">
+		</picture>
 	</section>
 
 	<section>
@@ -287,8 +317,7 @@
 				<li>
 					<h3>Overture Superfactory</h3>
 					<p>The Overture Superfactory, the final assembly line for Overture flight tests and customer delivery,
-					 is on pace for completion in 2024 in Greensboro, North Carolina.</p>
-					<a href="#">learn more <span class="visually-hidden">about: Overture Superfactory</span></a>
+					 is on pace for completion in 2024 in Greensboro, North Carolina.</p>					
 					<img src="./imagesOverture/overture-facilities-superfactory-1440x1080.jpg" alt="an image of the Overture being rolled out the factory">
 				</li>
 				
@@ -296,7 +325,6 @@
 					<h3>The Iron Bird</h3>
 					<p>The Iron Bird, the facility housing a full-scale iron bird used to test and integrate flight components and systems, software, 
 					and hardware-in-the-loop, is being built in Centennial, Colorado.</p>
-					<a href="#">learn more <span class="visually-hidden">about: The Iron Bird</span></a>
 					<img src="./imagesOverture/overture-facilities-iron-bird-1440x1080.jpg" alt="an image of the Overture's structure">
 				</li>
 			</ul>
@@ -305,10 +333,9 @@
 
 	<section>	
 			<h3>SAF Providers Secured for Overture Flight Test Program</h3>
-				<p>Boom is partnering with Dimensional Energy and AIR COMPANY, who will provide up to 10 million gallons of SAF per year for Overture’s 
-					net zero carbon flight test program.</p>
+				<p>Boom is partnering with Dimensional Energy and AIR COMPANY</p>
 					<img src="./imagesOverture/overture-saf-providers-1440x810.jpg" alt="an image of the Overture standing on a rurunway ready for take off">
-					<a href="#">learn more <span class="visually-hidden">about: SAF Providers Secured for Overture Flight Test Program</span></a>	
+				<a href="#">learn more <span class="visually-hidden">about: SAF Providers Secured for Overture Flight Test Program</span></a>	
 	</section>
 
 	<section>
@@ -316,14 +343,28 @@
 				<li>
 					<h3>Large and Growing Demand for Supersonic Travel</h3>
 					<p>Demand for supersonic travel is at an all-time high.</p>
-					<img src="./imagesOverture/overture-commercial-new.jpg" alt="an image of the Overture standing on a rurunway">
-					<a href="#">learn more <span class="visually-hidden">about: Large and Growing Demand for Supersonic Travel</span></a>
+
+                    <picture>
+						<source media="(max-width: 768px)"
+					srcset="./imagesOverture/overture-commercial-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./imagesOverture/overture-commercial.jpg" />	
+						<img src="./imagesOverture/overture-commercial-new.jpg" alt="an image of the Overture standing on a rurunway">
+					</picture>
+					
 				</li>
 
 				<li>
 					<h3>High-speed Government Transport</h3>
-					<p>Boom’s market-expanding relationship with Northrop Grumman is focused on defense variants of Overtur.</p>
-					<img src="./imagesOverture/overture-high-speed-government-transport-new.jpg" alt="an image of the Overture in grey with Northrop Grumman on the left side of the fuselage">
+					
+                    <picture>
+						<source media="(max-width: 768px)"
+					srcset="./imagesOverture/overture-high-speed-government-transport-new.jpg" />
+						<source media="(min-width: 769px)" 
+					srcset="./imagesOverture/overture-high-speed-government-transport.jpg" />	
+						<img src="./imagesOverture/overture-high-speed-government-transport-new.jpg" alt="an image of the Overture in grey with Northrop Grumman on the left side of the fuselage">
+					</picture>
+					
 					<a href="#">learn more <span class="visually-hidden">about: High-speed Government Transport</span></a>
 				</li>
 			</ul>	
@@ -374,7 +415,7 @@
 			<li>
 				<h4>2027</h4>
 				<p>First flight</p>
-				<img src="./imagesOverture/overture-timeline-2029-type-cert.jpg" alt="an image of the Overture at cruising altitude">
+				<img src="./imagesOverture/overture-timeline-2027-first-flight.jpg" alt="an image of the Overture arriving at cruising altitude">
 			</li>
 		</ul>
 	</section>
@@ -396,7 +437,7 @@
 
 	<h5>Careers</h5>
 	<p>We need bright minds to help us deliver on our mission. Check out our open roles and get in touch.</p>
-	<button class="exploreCareers">explore careers</button>
+	<button class="exploreCareers">explore_careers</button>
 	
 	<section>
 		<ul>
@@ -409,7 +450,7 @@
 			<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”>
 				<img aria-hidden="true" alt="link to instagram" 
 				src="./footerimages/instagram.jpeg"></a></li>
-			<li><a href="https://www.instagram.com/boomsupersonic/" target=”_blank”>
+			<li><a href="https://www.youtube.com/channel/UCqgUPhWBtIl12rpn-GoA6hQ" target=”_blank”>
 				<img aria-hidden="true" alt="link to youtube" 
 				src="./footerimages/youtube.jpeg"></a></li>
 			<li><a href="https://www.facebook.com/boomsupersonic/" target=”_blank”>
